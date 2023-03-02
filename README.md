@@ -1,13 +1,19 @@
 # go-idna
 IDNA conversion in Go
 
+The input is not a U-label, and the result is not an A-label:
+
 ```
 $ go run idn.go 🕵💻.st
 name: 🕵💻.st
 Simple Punycode conversion: xn--3s8htl.st
 MapForLookup, Transitional: xn--3s8htl.st
 ValidateForRegistration: xn--3s8htl.st
+```
 
+More conventional examples:
+
+```
 $ go run idn.go blåbærgrød.no
 name: blåbærgrød.no
 Simple Punycode conversion: xn--blbrgrd-fxak7p.no
