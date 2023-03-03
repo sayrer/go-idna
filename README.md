@@ -1,7 +1,7 @@
 # go-idna
 IDNA conversion in Go
 
-The input is not a U-label, and the result is not an A-label:
+In this example, the input is not a U-label, and the result is not an A-label:
 
 ```
 $ go run idn.go 🕵💻.st
@@ -11,7 +11,7 @@ MapForLookup, Transitional: xn--3s8htl.st
 ValidateForRegistration: xn--3s8htl.st
 ```
 
-More conventional examples:
+Some more conventional examples:
 
 ```
 $ go run idn.go blåbærgrød.no
